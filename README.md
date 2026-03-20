@@ -13,18 +13,18 @@ A fast-paced browser game where the player matches city names to the correct cou
 
 - Each difficulty now uses a different city set, so challenges do not overlap.
 - Pools are organized per difficulty, each with its own base pool and dedicated fill bank.
-- Normal Mode focuses on easier, well-known cities.
-- Globe Trotter focuses on slightly smaller populations and lesser-known countries.
-- Atlas God focuses on the rarest and most obscure locations.
-- Each game now has 20 questions per run.
+- The game randomly selects 20 questions from the chosen difficulty's pool for each run.
+- Normal Mode, Globe Trotter, and Atlas God have their own unique city entries, ensuring a fresh experience across difficulties.
 - Capital Cities pool contains 150 city entries.
 - Normal Mode, Globe Trotter, and Atlas God pools each contain 100 city entries.
 - Every question now guarantees unique flag options (no duplicate country flags in the same set of choices).
-- Capital Cities: 20 rounds, 4 choices, +10 correct, no penalty.
-- Normal Mode: 20 rounds, 5 choices, +12 correct, -2 wrong.
-- Globe Trotter: 20 rounds, 6 choices, +14 correct, -4 wrong.
-- Atlas God: 20 rounds, 6 choices, +16 correct, -8 wrong.
 - At the end, your final score and accuracy are shown.
+
+## Difficulty Levels
+- Capital Cities: 150 city entries, 20 questions per run.
+- Normal Mode: 100 city entries, 20 questions per run.
+- Globe Trotter: 100 city entries, 20 questions per run.
+- Atlas God: 100 city entries, 20 questions per run.
 
 ## Files
 
