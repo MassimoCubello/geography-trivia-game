@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>City to Flag Match</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header class="hero">
+        <p class="eyebrow">Global Geography Challenge</p>
+        <h1>Match Cities to Flags</h1>
+        <p class="subhead">
+          Pick the country flag that belongs to each city. Move quickly and aim
+          for a perfect run.
+        </p>
+      </header>
+
+      <section class="difficulty" aria-label="Difficulty selection">
+        <p class="difficulty-label">Choose Difficulty</p>
+        <div class="difficulty-options" role="radiogroup" aria-label="Difficulty levels">
+          <label class="difficulty-chip">
+            <input type="radio" name="difficulty" value="capital-cities" checked />
+            <span>Capital Cities</span>
+          </label>
+          <label class="difficulty-chip">
+            <input type="radio" name="difficulty" value="normal-mode" />
+            <span>Normal Mode</span>
+          </label>
+          <label class="difficulty-chip">
+            <input type="radio" name="difficulty" value="globe-trotter" />
+            <span>Globe Trotter</span>
+          </label>
+          <label class="difficulty-chip">
+            <input type="radio" name="difficulty" value="atlas-god" />
+            <span>Atlas God</span>
+          </label>
+        </div>
+      </section>
+
+      <section class="hud" aria-label="Game stats">
+        <div class="metric">
+          <span class="metric-label">Round</span>
+          <strong id="round">0 / 20</strong>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Score</span>
+          <strong id="score">0</strong>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Correct</span>
+          <strong id="correct">0</strong>
+        </div>
+        <div class="metric">
+          <span class="metric-label">Difficulty</span>
+          <strong id="difficulty-name">Capital Cities</strong>
+        </div>
+      </section>
+
+      <section class="card" aria-live="polite">
+        <p class="prompt-label">Which flag belongs to this city?</p>
+        <h2 id="city" class="city">Press Start</h2>
+
+        <div id="options" class="options" role="list"></div>
+
+        <p id="feedback" class="feedback">Ready when you are.</p>
+
+        <div class="actions">
+          <button id="start" class="btn btn-primary" type="button">
+            Start Game
+          </button>
+          <button
+            id="next"
+            class="btn btn-secondary"
+            type="button"
+            disabled
+          >
+            Next City
+          </button>
+          <button id="quit" class="btn btn-quit" type="button" disabled>
+            Quit Game
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
